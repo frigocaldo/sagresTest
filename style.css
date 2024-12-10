@@ -1,0 +1,21 @@
+.itemName {
+  padding: 10px;
+}
+.prezzo {
+  padding: 2px;
+  text-align: right;
+}
+.sum {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.totale-ordine {
+  text-align: right;
+  padding-right: 10px;
+}
+
+td {
+  vertical-align: middle;
+}

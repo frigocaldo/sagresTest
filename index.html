@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolo Totale Ordine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ordine Prodotti</h1>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Q.ta</th>
+          <th>Descrizione</th>
+          <th>Costo Unitario</th>
+          <th>Totale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input
+              type="number"
+              id="qta1"
+              placeholder="Inserisci numero"
+              min="0"
+              onchange="calcolaTotale(1)"
+            />
+          </td>
+          <td class="itemName">mouse</td>
+          <td class="prezzo">16€</td>
+          <td><span id="totale1" class="sum">0€</span></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="number"
+              id="qta2"
+              placeholder="Inserisci numero"
+              min="0"
+              onchange="calcolaTotale(2)"
+            />
+          </td>
+          <td class="itemName">tastiera 105 tasti</td>
+          <td class="prezzo">25€</td>
+          <td><span id="totale2" class="sum">0€</span></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="number"
+              id="qta3"
+              placeholder="Inserisci numero"
+              min="0"
+              onchange="calcolaTotale(3)"
+            />
+          </td>
+          <td class="itemName">stampante deskjet colori</td>
+          <td class="prezzo">350€</td>
+          <td><span id="totale3" class="sum">0€</span></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="number"
+              id="qta4"
+              placeholder="Inserisci numero"
+              min="0"
+              onchange="calcolaTotale(4)"
+            />
+          </td>
+          <td class="itemName">scanner A4 colori</td>
+          <td class="prezzo">200€</td>
+          <td>
+            <span id="totale4" class="sum" aria-placeholder="0€">0€</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="totale-ordine">
+            <strong>Totale Ordine</strong>
+          </td>
+          <td>
+            <span id="totaleOrdine" class="sum" aria-placeholder="0€">0€</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="bottoneReset" style="size: 20">Azzera</button>
+    <button id="bottoneAiuto">Help</button>
+    <script src="script.js"></script>
+  </body>
+</html>
